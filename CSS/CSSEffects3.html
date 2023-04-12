@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Animations and Paginations</title>
+	<style>
+		/* CSS Animation */
+		.box {
+			width: 100px;
+			height: 100px;
+			background-color: #f00;
+			animation-name: slide;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-delay: 1s;
+		}
+
+		@keyframes slide {
+			from {
+				transform: translateX(0);
+			}
+
+			to {
+				transform: translateX(200px);
+			}
+		}
+
+		/* Hoverable Paginations with Spaces */
+		.pagination {
+			list-style: none;
+			display: flex;
+			padding: 0;
+			margin: 0;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.pagination li {
+			margin: 0 5px;
+			cursor: pointer;
+			color: #333;
+			transition: all 0.2s ease;
+		}
+
+		.pagination li:hover {
+			color: #f00;
+		}
+
+		.pagination li.active {
+			color: #f00;
+			font-weight: bold;
+		}
+
+		/* Hoverable Paginations without Spaces */
+		.pagination-nospace {
+			list-style: none;
+			display: flex;
+			padding: 0;
+			margin: 0;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.pagination-nospace li {
+			margin: 0;
+			padding: 5px;
+			cursor: pointer;
+			color: #333;
+			transition: all 0.2s ease;
+		}
+
+		.pagination-nospace li:hover {
+			color: #f00;
+			background-color: #f7f7f7;
+		}
+
+		.pagination-nospace li.active {
+			color: #f00;
+			font-weight: bold;
+			background-color: #f7f7f7;
+		}
+	</style>
+</head>
+<body>
+	<!-- CSS Animation -->
+	<div class="box"></div>
+
+	<!-- Hoverable Paginations with Spaces -->
+	<ul class="pagination">
+		<li class="active">1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+
+	<!-- Hoverable Paginations without Spaces -->
+	<ul class="pagination-nospace">
+		<li class="active">1</li><li>2</li><li>3</li><li>4</li><li>5</li>
+	</ul>
+</body>
+</html>

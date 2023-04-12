@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Visibility and Display Examples</title>
+	<style>
+		.hidden {
+			visibility: hidden;
+		}
+
+		.visible {
+			visibility: visible;
+		}
+
+		.collapsed {
+			visibility: collapse;
+		}
+
+		.none {
+			display: none;
+		}
+
+		.inline {
+			display: inline;
+			padding: 5px;
+			background-color: #eee;
+		}
+
+		.block {
+			display: block;
+			margin: 20px;
+			padding: 10px;
+			background-color: #ddd;
+			border: 1px solid black;
+		}
+
+		.contents {
+			display: contents;
+		}
+
+		.list-item {
+			display: list-item;
+			list-style: disc;
+			margin-left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h2>Visibility Examples</h2>
+	<p>The following divs have different visibility properties:</p>
+	<div class="hidden">
+		This div is hidden.
+	</div>
+	<div class="visible">
+		This div is visible.
+	</div>
+	<div class="collapsed">
+		This div is collapsed.
+	</div>
+
+	<h2>Display Examples</h2>
+	<p>The following elements have different display properties:</p>
+	<span class="inline">
+		This is an inline element.
+	</span>
+	<div class="block">
+		This is a block element.
+	</div>
+	<div class="contents">
+		<p>This paragraph is part of a div with display: contents.</p>
+		<p>So is this one.</p>
+	</div>
+	<ul>
+		<li>This is a list item with default display property (list-item).</li>
+		<li class="list-item">This is a list item with display: list-item.</li>
+	</ul>
+	<p class="none">
+		This paragraph has display: none and is not visible.
+	</p>
+</body>
+</html>

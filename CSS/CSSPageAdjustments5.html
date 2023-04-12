@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiple Background Images</title>
+	<style>
+		body {
+			background-image: url("background-image-1.jpg"), url("background-image-2.jpg"), url("background-image-3.jpg");
+			background-size: auto, cover, contain;
+			background-repeat: no-repeat, repeat-y, repeat-x;
+			background-position: left top, right top, center bottom;
+		}
+		.box {
+			background-image: url("background-image-4.jpg"), url("background-image-5.jpg");
+			background-size: 50% auto, cover;
+			background-repeat: no-repeat;
+			background-position: left top, right bottom;
+			height: 200px;
+			width: 400px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		This is a box with multiple background images.
+	</div>
+</body>
+</html>
